@@ -49,4 +49,4 @@ client.on('message', async message => {
 client.on('ready', () => console.log('Launched!'));
 
 
-client.login('NTI2MDY0NzkwODA0ODg5NjUw.Dv_3_Q.lwoV61as7D4GlsI42SndlJqatSs');
+client.login('YOUR TOKEN');
