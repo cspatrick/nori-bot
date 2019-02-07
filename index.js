@@ -3,13 +3,13 @@ const client = new Discord.Client();
 
 const prefix = '+';
 const ownerID = '275814889430188032';
-let status = 'my dick fall off';
-//let status = 'with Fatrick 💕';
+let status = '+help';
+//let status = 'with Patrick 💕';
 
 client.on('ready', () =>{
 
   
-    client.user.setPresence({game: {name: status , type: 3}, status: 'online'});
+    client.user.setPresence({game: {name: status , type: 0}, status: 'online'});
 
     //client.user.setPresence({activity: {name: status }, status: 'online'});
 
