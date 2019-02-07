@@ -11,7 +11,7 @@ exports.run =  (client, message, args, ops) => {
 
   message.channel.send(embed);
   
-  //message.delete({timeout: 1000});
+  message.delete({timeout: 1000});
   
 
 }
