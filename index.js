@@ -49,4 +49,4 @@ client.on('message', async message => {
 client.on('ready', () => console.log('Launched!'));
 
 
-client.login('YOUR TOKEN');
+client.login(process.env.BOT_TOKEN);
