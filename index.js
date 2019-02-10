@@ -23,11 +23,12 @@ client.on('message', async message => {
   if(message.content.includes("XD") ){
   message.delete({timeout: 1000});
   return;
+  }
   
 	if (message.author.bot) return;
 	if (!message.content.startsWith(prefix)) return;
 
-}
+
 
 	try {
 		delete require.cache[require.resolve(`./commands/${cmd}.js`)];
