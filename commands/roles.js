@@ -19,6 +19,7 @@ try{
   await msg.react('1⃣');
   await msg.react('2⃣');
   await msg.react('3⃣');
+  await msg.react('4️⃣');
   await msg.react('🇶');
   await msg.react('🇭');
 
