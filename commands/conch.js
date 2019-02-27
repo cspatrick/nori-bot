@@ -7,8 +7,7 @@ exports.run = async (client, message, args, ops) => {
 
     var replies = [
       "Maybe someday.",
-      "Nothing.",
-      "Neither.",
+      "Follow the seahorse.",
       "I don't think so.",
       "No.",
       "Yes.",
