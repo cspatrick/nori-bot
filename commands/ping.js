@@ -8,4 +8,8 @@ exports.run = (client, message, args) => {
 	
   message.delete({timeout: 1000});
 	
+  setTimeout(() => {
+  message.channel.send('test');
+	}, 5000);
+	
 }
