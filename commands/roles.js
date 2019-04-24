@@ -11,8 +11,6 @@ try{
     .setFooter(`by ${message.author.username}`)
     .setTitle('React or get moved out of voice chat!')
 
-
-
   let msg = await message.channel.send(embed);
   
   message.delete({timeout: 1000});
@@ -24,6 +22,14 @@ try{
   await msg.react('🇶');
   await msg.react('🇭');
 
+  const embed2 = new Discord.RichEmbed()
+    .setColor(16754843)
+    .setTitle('15 sec left to react or you will be removed from voice chat! \nWatch out for NOTS and dont spam options.');
+	
+  setTimeout(() => {
+  message.channel.send(embed2);
+	}, 15000);
+  
  } catch (e){
    console.log(e);
  }
