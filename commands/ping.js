@@ -6,13 +6,6 @@ exports.run = (client, message, args) => {
 
   message.channel.send(embed);
 	
-  if (message.content === embed) { 
-      var interval = setInterval (function () {
-        message.channel.send("123")
-      }, 1 * 5000); 
-    } 
-	
-  message.delete({timeout: 5000});
   message.delete({timeout: 1000});
 	
 }
