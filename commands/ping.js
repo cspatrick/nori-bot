@@ -8,4 +8,8 @@ exports.run = (client, message, args) => {
 	
   message.delete({timeout: 1000});
 	
+  var interval = setInterval (function () {
+        message.channel.send("this is a test after 5 seconds")
+      }, 1 * 5000);	
+	
 }
