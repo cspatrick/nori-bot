@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
   message.delete({timeout: 1000});
 	
   setTimeout(() => {
-  message.channel.send('test');
-	}, 5000);
+  message.channel.send('15 sec left to react or you will be removed from voice chat! Watch out for NOTS and dont spam options');
+	}, 15000);
 	
 }
