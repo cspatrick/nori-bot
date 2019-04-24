@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     .setTitle('15 sec left to react or you will be removed from voice chat! \nWatch out for NOTS and dont spam options.');
 	
   setTimeout(() => {
-  message.channel.send('embed2');
+  message.channel.send(embed2);
 	}, 15000);
 	
 }
