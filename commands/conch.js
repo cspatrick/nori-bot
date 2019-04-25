@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
   try {
-    if (!args[0]) return message.channel.send('Proper Usage: <prefix>conch question');
+    if (!args[0]) return message.channel.send('Proper Usage: +conch question');
 
     var replies = [
       "Maybe someday.",
