@@ -8,8 +8,8 @@ try{
   const embed = new Discord.RichEmbed()
     .setColor(16754843)
     .setFooter(`by ${message.author.username}`)
-    .addField('Pay', args.join(' ') )
-    .addField('Did you win?)
+    .addField('Pay', args.join(' ') 
+    .addField('Did you win?))
     //.setDescription(args.join(' '))
 
   let msg = await message.channel.send(embed);
