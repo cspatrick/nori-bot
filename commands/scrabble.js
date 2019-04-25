@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
   try {
-    if (!args[0]) return message.channel.send('Proper Usage: <prefix>scrabble word');
+    if (!args[0]) return message.channel.send('Proper Usage: +scrabble word');
 
     var one = ["a", "e", "i", "o", "u", "l", "n", "s", "t", "r"];
     var two = ["d", "g"];
