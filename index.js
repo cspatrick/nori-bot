@@ -21,7 +21,7 @@ client.on('message', async message => {
 	let cmd = args.shift().toLowerCase();
 	
   if(message.author.id == '191787373292421120'){
-  msg.react('<:troll:548643003691171850>');
+  message.react('<:troll:548643003691171850>');
   return;
   }
 	
