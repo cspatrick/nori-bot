@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
   try {
-    if (!args[0]) return message.channel.send('Proper Usage: <prefix>wwf word');
+    if (!args[0]) return message.channel.send('Proper Usage: +wwf word');
 
     var one = ["a", "e", "i", "o", "r", "s", "t"];
     var two = ["d", "l", "n", "u"];
