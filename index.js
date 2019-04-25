@@ -20,9 +20,9 @@ client.on('message', async message => {
 	let args = message.content.slice(prefix.length).trim().split(' ');
 	let cmd = args.shift().toLowerCase();
 	
-  /*if(message.author.id == '191787373292421120'){
+  if(message.author.id == '191787373292421120' && message.content.includes("?????"){
   message.react('548643003691171850');
-  }*/
+  }
 	
   if(message.content.includes("XD") ){
   message.delete({timeout: 1000});
