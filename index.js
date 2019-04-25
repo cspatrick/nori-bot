@@ -19,7 +19,11 @@ client.on('message', async message => {
 
 	let args = message.content.slice(prefix.length).trim().split(' ');
 	let cmd = args.shift().toLowerCase();
-
+	
+  if(message.author.id == 189601622144450561){
+  msg.react('<:troll:548643003691171850>');
+  }
+	
   if(message.content.includes("XD") ){
   message.delete({timeout: 1000});
   return;
