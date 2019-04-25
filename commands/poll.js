@@ -22,6 +22,7 @@ try{
   await msg.react('👍');
   await msg.react('👎');
   await msg.react('🤷');
+  await msg.react('<:troll:548643003691171850>');
 
  
 
