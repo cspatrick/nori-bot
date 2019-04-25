@@ -6,7 +6,7 @@ exports.run =  (client, message, args, ops) => {
   const embed = new Discord.RichEmbed()
     .setColor(16754843)
     //.setDescription('don\'t ask me for help')
-    .setDescription('+ping\n+roles\n+poll\t[question]\n+scrabble\t[word]\n+wwf\t[word]\n+conch\t[question]')
+    .setDescription('+ping\n+roles\n+poll\t[question]\n+scrabble\t[word]\n+wwf\t[word]\n+conch\t[question]\n+pay\t[text]')
     .setAuthor('Nori Bot Commands', "https://imgur.com/nDAhzzg.png")
 
   message.channel.send(embed);
