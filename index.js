@@ -20,7 +20,7 @@ client.on('message', async message => {
 	let args = message.content.slice(prefix.length).trim().split(' ');
 	let cmd = args.shift().toLowerCase();
 	
-  if(message.author.id == '191787373292421120' && message.content.includes("????????")){
+  if(message.author.id == '189601622144450561'){
   message.react('548643003691171850');
   }
 	
