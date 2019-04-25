@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
 try{
-  if(!args[0]) return message.channel.send('Proper Usage: <prefix>pay text');
+  if(!args[0]) return message.channel.send('Proper Usage: +pay text');
 
   const embed = new Discord.RichEmbed()
     .setColor(16754843)
