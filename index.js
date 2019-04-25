@@ -22,7 +22,6 @@ client.on('message', async message => {
 	
   if(message.author.id == '191787373292421120'){
   message.react('<:troll:548643003691171850>');
-  return;
   }
 	
   if(message.content.includes("XD") ){
