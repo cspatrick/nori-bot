@@ -11,6 +11,7 @@ try{
     .setFooter(`by ${message.author.username}`)
     .setTitle('React or get moved out of voice chat!')
 
+  if(message.channel.id != '570803215310782480'){
   let msg = await message.channel.send(embed);
   
   message.delete({timeout: 1000});
@@ -29,6 +30,7 @@ try{
   setTimeout(() => {
   message.channel.send(embed2);
 	}, 15000);
+  }
   
  } catch (e){
    console.log(e);
