@@ -15,7 +15,7 @@ try{
     //.setDescription(args.join(' '))
     //.setTitle(`Poll created by ${message.author.username}`)
 
-
+  if(message.channel.id != '570803215310782480'){
   let msg = await message.channel.send(embed);
   
   message.delete({timeout: 1000});
@@ -23,6 +23,7 @@ try{
   await msg.react('👍');
   await msg.react('👎');
   await msg.react('🤷');
+  }
   
  } catch (e){
    console.log(e);
