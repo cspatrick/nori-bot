@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
   try {
-    if (!args[0]) return message.channel.send('Proper Usage: +scrabble word');
+    if (!args[0] && message.channel.id != '570803215310782480') return message.channel.send('Proper Usage: +scrabble word');
 
     var one = ["a", "e", "i", "o", "u", "l", "n", "s", "t", "r"];
     var two = ["d", "g"];
@@ -44,9 +44,11 @@ exports.run = async (client, message, args, ops) => {
       //.setDescription('fk off')
       .setDescription(`**${args.join(' ')}**: ${score}`)
 
+    if(message.channel.id != '570803215310782480'){
     message.channel.send(embed);
 
     message.delete({ timeout: 1000 });
+    }
 
   } catch (e) {
     console.log(e);
