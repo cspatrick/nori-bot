@@ -19,6 +19,10 @@ client.on('message', async message => {
 
 	let args = message.content.slice(prefix.length).trim().split(' ');
 	let cmd = args.shift().toLowerCase();
+  
+  if (message.channel.id === '570803215310782480' && message.content.substring(0,5) != '+pay'){
+  message.delete({timeout: 1000});
+  }
 	
   /*if(message.author.id == '189601622144450561'){
   message.react('548643003691171850');
