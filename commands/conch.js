@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
   try {
-    if (!args[0]) return message.channel.send('Proper Usage: +conch question');
+    if (!args[0] && message.channel.id != '570803215310782480') return message.channel.send('Proper Usage: +conch question');
 
     var replies = [
       "Maybe someday.",
@@ -22,9 +22,11 @@ exports.run = async (client, message, args, ops) => {
       .addField("❓ Question", args.join(' '))
       .addField("<:conch:550193077675884544> Magic Conch", replies[random])
 
+    if(message.channel.id != '570803215310782480'){
     message.channel.send(embed);
 
     message.delete({ timeout: 1000 });
+    }
 
   } catch (e) {
     console.log(e);
