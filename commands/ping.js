@@ -4,8 +4,10 @@ exports.run = (client, message, args) => {
     .setColor(16754843)
     .setTitle('fk off');
 
+  if(message.channel.id != '570803215310782480'){
   message.channel.send(embed);
 	
   message.delete({timeout: 1000});
+  }
 	
 }
