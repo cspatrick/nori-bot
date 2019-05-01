@@ -24,9 +24,9 @@ client.on('message', async message => {
   message.delete({timeout: 1000});
   }
 	
-  if(message.author.id == '275813544191328266'){
+  /*if(message.author.id == '275813544191328266'){
   message.react('400851460235067392');
-  }
+  }*/
 	
   if(message.content.includes("XD") ){
   message.delete({timeout: 1000});
