@@ -24,13 +24,13 @@ try{
   await msg.react('🇭');
   await msg.react('🇱');
 
-  const embed2 = new Discord.RichEmbed()
+  /*const embed2 = new Discord.RichEmbed()
     .setColor(16754843)
-    .setTitle('15 sec left to react or you will be removed from voice chat! \nWatch out for NOTS and dont spam options.');
+    .setTitle('15 sec left to react or you will be removed from voice chat! \nWatch out for NOTS and dont spam options.');*/
 	
-  setTimeout(() => {
+  /*setTimeout(() => {
   message.channel.send(embed2);
-	}, 15000);
+	}, 15000);*/
   }
   
  } catch (e){
