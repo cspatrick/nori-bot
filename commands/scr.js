@@ -14,7 +14,7 @@ exports.run = async (client, message, args, ops) => {
     var ten = ["q", "z"];
 
     var score = 0;
-    for (var i = 10; i < message.content.length; i++) {
+    for (var i = 5; i < message.content.length; i++) {
       if (one.includes(message.content.charAt(i).toLowerCase())) {
         score += 1;
       }
