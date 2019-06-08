@@ -28,6 +28,13 @@ client.on('message', async message => {
   message.react('400851460235067392');
   }*/
 	
+  const nots = new Discord.RichEmbed()
+    .setColor(16754843)
+    .setTitle('nots!');
+	
+  if(message.content.includes("bots") ){
+  message.channel.send(nots);
+	
   if(message.content.includes("XD") ){
   message.delete({timeout: 1000});
   return;
