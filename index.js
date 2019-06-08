@@ -29,10 +29,10 @@ client.on('message', async message => {
   }*/
 	
 	
-  /*if(message.content.includes("bots") ){
+  if(message.content.includes("bots") ){
   message.channel.send({embed: {
   color: 16754843,
-  description: "nots!"}});*/
+  description: "nots!"}});
 	
   if(message.content.includes("XD") ){
   message.delete({timeout: 1000});
