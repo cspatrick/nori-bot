@@ -7,7 +7,6 @@ try{
 
   const embed = new Discord.RichEmbed()
     .setColor(16754843)
-    //.setTitle('hope u lose')
     .setFooter(`by ${message.author.username}`)
     .setTitle('React or get moved out of voice chat!')
 
