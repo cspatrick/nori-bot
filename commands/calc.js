@@ -7,8 +7,6 @@ exports.run = (client, message, args, tools) => {
 
   let resp;
 
-  let msg = 'fk u, do it urself';
-
   try {
 
     resp = math.eval(args.join(' '));
