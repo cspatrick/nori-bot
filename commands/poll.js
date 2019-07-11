@@ -10,7 +10,6 @@ try{
   const embed = new Discord.RichEmbed()
     .setColor(16754843)
     .setFooter(`by ${message.author.username}`)
-    //.setDescription('no one cares about ur dumb question')
     .addField('Poll', args.join(' ') )
     //.setDescription(args.join(' '))
     //.setTitle(`Poll created by ${message.author.username}`)
