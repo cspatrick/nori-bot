@@ -32,7 +32,7 @@ client.on('message', async message => {
     .setColor(16754843)
     .setTitle('nots!');
 	
-  if(message.content.includes("(" && ")") ){
+  if(message.content.includes("(") || message.content.includes(")")){
   message.channel.send("shut up");
   return;
   }
