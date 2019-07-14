@@ -32,7 +32,7 @@ client.on('message', async message => {
     .setColor(16754843)
     .setTitle('nots!');
 	
-  if(message.member.roles.has(503792240569876511) && message.content.includes("(") || message.content.includes(")")){
+  if(message.member.roles.equals("503792240569876511") && message.content.includes("(") || message.content.includes(")")){
   message.channel.send("shut up");
   return;
   }
