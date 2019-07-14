@@ -32,6 +32,11 @@ client.on('message', async message => {
     .setColor(16754843)
     .setTitle('nots!');
 	
+  if(message.content.includes("()") ){
+  message.channel.send("shut up");
+  return;
+  }
+	
   if(message.content.includes("bots") ){
   message.channel.send(test);
   return;
