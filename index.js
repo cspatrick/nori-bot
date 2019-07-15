@@ -35,7 +35,11 @@ client.on('message', async message => {
   if((message.content.includes("(") || message.content.includes(")")) && !message.member.roles.equals("503792240569876511")){
   message.delete({timeout: 1000});
   message.channel.send("shut up");
-  message.delete({timeout: 1000});
+  return;
+  }
+	
+  if(message.author.id == '542873293246693413' && message.content.includes("shut up")){
+  message.delete({timeout: 3000});
   return;
   }
 	
