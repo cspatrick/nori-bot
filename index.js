@@ -33,7 +33,9 @@ client.on('message', async message => {
     .setTitle('nots!');
 	
   if((message.content.includes("(") || message.content.includes(")")) && !message.member.roles.equals("503792240569876511")){
+  message.delete({timeout: 1000});
   message.channel.send("shut up");
+  message.delete({timeout: 1000});
   return;
   }
 	
