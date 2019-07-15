@@ -39,7 +39,7 @@ client.on('message', async message => {
   }
 	
   if(message.author.id == '542873293246693413' && message.content.includes("shut up")){
-  message.delete({timeout: 10000});
+  message.delete(5000);
   return;
   }
 	
