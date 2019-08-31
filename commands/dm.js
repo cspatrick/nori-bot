@@ -8,7 +8,7 @@ try{
   }
   
   mention = message.mentions.users.first();
-  mention.sendMessage(message.content);
+  mention.sendMessage(message.content());
   
  } catch (e){
    console.log(e);
