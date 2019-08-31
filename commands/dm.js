@@ -8,7 +8,6 @@ try{
   }
   
   mention = message.mentions.users.first();
-  mentionMessage = message.content.slice (8);
   mention.sendMessage(mentionMessage);
   
  } catch (e){
