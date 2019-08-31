@@ -8,7 +8,8 @@ exports.run = async (client, message, args, ops) => {
     if(!args[0] || mention == null){
     return message.channel.send('Proper Usage: +dm user message');
     }
-  
+    
+  message.delete();
   msg = message.content.slice(26);
   mention.sendMessage(msg);
   
