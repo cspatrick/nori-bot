@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async (client, message, args, ops) => {
 
 try{
-  if(mention == null){
+  if(!args[0] || mention == null){
   return message.channel.send('Proper Usage: +dm user message');
   }
   
