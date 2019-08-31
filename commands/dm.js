@@ -9,7 +9,7 @@ exports.run = async (client, message, args, ops) => {
     return message.channel.send('Proper Usage: +dm user message');
     }
   
-  msg = message.content.slice(8);
+  msg = message.content.slice(18);
   mention.sendMessage(msg);
   
  } catch (e){
