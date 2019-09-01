@@ -6,7 +6,7 @@ exports.run = async (client, message, args, ops) => {
   
   try{
     if(!args[0] || mention == null){
-      return message.channel.send('Proper Usage: +dm user message');
+      return message.channel.send('Proper Usage: +dm @user message');
     }
     
   message.delete();
