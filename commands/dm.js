@@ -16,7 +16,7 @@ exports.run = async (client, message, args, ops) => {
     mention.sendMessage(msg);
   }
   else{
-    message.channel.send('You cant use that!');
+    message.channel.send('Hey man you cant use that!');
   }
   
  } catch (e){
