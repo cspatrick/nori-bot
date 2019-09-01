@@ -7,8 +7,12 @@ exports.run = async (client, message, args, ops) => {
   try{
     if(!args[0] || mention == null){
       return message.channel.send('Proper Usage: +dm user message');
-      message.delete(5000);
     }
+    
+  if(message.author.id == '542873293246693413' && message.content.includes("Proper Usage")){
+     message.delete(5000);
+     return;
+     }
     
   message.delete();
     
