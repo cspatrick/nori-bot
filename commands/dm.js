@@ -11,7 +11,7 @@ exports.run = async (client, message, args, ops) => {
     
   message.delete();
     
-  if(message.author.member.roles.has('480870558720851998'){
+  if(message.author.member.roles.has('480870558720851998')){
     msg = message.content.slice(26);
     mention.sendMessage(msg);
   }
