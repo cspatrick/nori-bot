@@ -10,8 +10,14 @@ exports.run = async (client, message, args, ops) => {
     }
     
   message.delete();
-  msg = message.content.slice(26);
-  mention.sendMessage(msg);
+    
+  if(message.author.roles.has('480870558720851998'){
+    msg = message.content.slice(26);
+    mention.sendMessage(msg);
+  }
+  else{
+    message.channel.send('You cant use that!');
+  }
   
  } catch (e){
    console.log(e);
