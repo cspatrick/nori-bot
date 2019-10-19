@@ -21,7 +21,7 @@ client.on('message', async message => {
 	let cmd = args.shift().toLowerCase();
   
   if (message.channel.id === '570803215310782480' && message.content.substring(0,5) != '+pay' && !message.author.bot){
-  message.delete({timeout: 1000});
+  	message.delete({timeout: 1000});
   }
 	
   /*if(message.author.id == '275813544191328266'){
@@ -35,24 +35,24 @@ client.on('message', async message => {
   if((message.content.includes("(") || message.content.includes(")") || message.content.includes("<:parenthesis:602010917450022922>")) 
   && !message.member.roles.equals("503792240569876511") 
   && message.channel.id === '503351506205016105' && message.author.id == '160755148250021889'){
-  message.delete(2000);
-  message.channel.send("shut up");
-  return;
+  	message.delete(2000);
+  	message.channel.send("shut up");
+  	return;
   }
 	
   if(message.author.id == '542873293246693413' && message.content.includes("shut up")){
-  message.delete(2000);
-  return;
+  	message.delete(2000);
+  	return;
   }
 	
   if(message.content.includes("bots") ){
-  message.channel.send(test);
-  return;
+  	message.channel.send(test);
+  	return;
   }
 	
   if(message.content.includes("XD") ){
-  message.delete({timeout: 1000});
-  return;
+  	message.delete({timeout: 1000});
+  	return;
   }
   
 	if (message.author.bot) return;
