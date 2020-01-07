@@ -14,7 +14,7 @@ exports.run = async (client, message, args, ops) => {
   if(message.member.roles.has('480870558720851998')){
     msg = message.content.slice(26);
     mention.sendMessage(msg);
-    message.channel.send('Sent!: ' + msg);
+    message.channel.send(msg + ' sent to ' + mention);
   }
   else{
     message.channel.send('No sir');
