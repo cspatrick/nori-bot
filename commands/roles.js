@@ -20,8 +20,8 @@ try{
   await msg.react('3⃣');
   //await msg.react('4⃣');
   await msg.react('🇶');
-  await msg.react('🇭');
-  await msg.react('🇱');
+  //await msg.react('🇭');
+  //await msg.react('🇱');
 
   /*const embed2 = new Discord.RichEmbed()
     .setColor(16754843)
