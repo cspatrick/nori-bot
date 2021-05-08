@@ -9,7 +9,7 @@ exports.run = async (client, message, args, ops) => {
       return message.channel.send('Proper Usage: +dm @user message');
     }
     
-  message.delete();
+  
     
   if(message.member.roles.has('480870558720851998')){
     msg = message.content.slice(26);
@@ -19,7 +19,7 @@ exports.run = async (client, message, args, ops) => {
   else{
     message.channel.send('No sir');
   }
-  
+  message.delete({timeout: 1000});
  } catch (e){
    console.log(e);
  }
