@@ -40,20 +40,20 @@ client.on('message', async message => {
   	return;
   }
 	
-  if(message.author.id == '542873293246693413' && message.content.includes("shut up")){
+  /*if(message.author.id == '542873293246693413' && message.content.includes("shut up")){
   	message.delete(2000);
   	return;
-  }
+  }*/
 	
   if(message.content.includes("bots") ){
   	message.channel.send(test);
   	return;
   }
 	
-  if(message.content.includes("XD") ){
+  /*if(message.content.includes("XD") ){
   	message.delete({timeout: 1000});
   	return;
-  }
+  }*/
   
 	if (message.author.bot) return;
 	if (!message.content.startsWith(prefix)) return;
