@@ -10,7 +10,7 @@ exports.run = async (client, message, args, ops) => {
       "I don't think so.",
       "No.",
       "Yes.",
-      "Try asking again.",
+      "shrug",
       "[In a very insulting, sarcastic-like tone] No."
     ];
 
